@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Demo 合集 | Card</title>
+    <meta name="description" content="Just playing around">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.af84dbc3.css" as="style"><link rel="preload" href="/assets/js/app.2e3de6ae.js" as="script"><link rel="preload" href="/assets/js/1.cbde87dc.js" as="script"><link rel="preload" href="/assets/js/4.42f597fd.js" as="script"><link rel="prefetch" href="/assets/js/2.51b2bb50.js"><link rel="prefetch" href="/assets/js/3.e1f50f52.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.af84dbc3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><!----><span class="site-name">
+      Demo 合集
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><!----></div></header><div class="sidebar-mask"></div><div class="sidebar"><!----><ul class="sidebar-links"><li><a href="/demo/" class="sidebar-link">demo</a></li><li><a href="/demo/card.html" class="active sidebar-link">卡片</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/demo/card.html#效果" class="sidebar-link">效果</a></li><li class="sidebar-sub-header"><a href="/demo/card.html#使用方法" class="sidebar-link">使用方法</a></li><li class="sidebar-sub-header"><a href="/demo/card.html#实现方法" class="sidebar-link">实现方法</a></li></ul></li></ul></div><div class="page"><div class="content"><h1 id="card"><a href="#card" aria-hidden="true" class="header-anchor">#</a> Card</h1><p>实习的部门是腾讯微瓴物联平台，昨天再看官网的时候，发现一个挺好看的card组件决定自己写一个看看。
+<img src="/assets/img/demo-card.bce724d5.png" alt></p><h2 id="效果"><a href="#效果" aria-hidden="true" class="header-anchor">#</a> 效果</h2><div class="card" style="margin:30px;" data-v-93fc2b28><div class="title" data-v-93fc2b28>爱你</div><div class="desc" data-v-93fc2b28>爱我</div></div><h2 id="使用方法"><a href="#使用方法" aria-hidden="true" class="header-anchor">#</a> 使用方法</h2><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>CardMe</span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>爱你<span class="token punctuation">&quot;</span></span> <span class="token attr-name">desc</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>爱我<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>CardMe</span><span class="token punctuation">&gt;</span></span>
+</code></pre><h2 id="实现方法"><a href="#实现方法" aria-hidden="true" class="header-anchor">#</a> 实现方法</h2><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>card<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>title<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>{{title}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>desc<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>{{desc}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript">
+  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    name<span class="token punctuation">:</span> <span class="token string">&quot;card-me&quot;</span><span class="token punctuation">,</span>
+    props<span class="token punctuation">:</span><span class="token punctuation">[</span><span class="token string">'title'</span><span class="token punctuation">,</span><span class="token string">'desc'</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">scoped</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>scss<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token style language-css">
+  <span class="token selector">.card</span> <span class="token punctuation">{</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> #eeeeee<span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 300px<span class="token punctuation">;</span>
+    <span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+    <span class="token property">box-shadow</span><span class="token punctuation">:</span> #777777 0 0 100px 2px<span class="token punctuation">;</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">skewY</span><span class="token punctuation">(</span>-0.1rad<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 210px<span class="token punctuation">;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> cornflowerblue<span class="token punctuation">;</span>
+    <span class="token property">transition</span><span class="token punctuation">:</span> 0.3s padding-top,0.5s 0.3s height <span class="token function">cubic-bezier</span><span class="token punctuation">(</span>0.19, 1, 0.22, 1<span class="token punctuation">)</span><span class="token selector">;
+    &amp;:hover</span> <span class="token punctuation">{</span>
+      <span class="token property">background-color</span><span class="token punctuation">:</span> cornflowerblue<span class="token punctuation">;</span>
+      <span class="token property">color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span>
+      <span class="token property">padding-top</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
+      <span class="token property">height</span><span class="token punctuation">:</span> 430px<span class="token selector">;
+      .desc</span><span class="token punctuation">{</span>
+        <span class="token property">opacity</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
+        <span class="token property">transition</span><span class="token punctuation">:</span> 1s 0.3s opacity <span class="token function">cubic-bezier</span><span class="token punctuation">(</span>0.19, 1, 0.22, 1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token selector">.title</span> <span class="token punctuation">{</span>
+      <span class="token property">font-size</span><span class="token punctuation">:</span> 2rem<span class="token punctuation">;</span>
+      <span class="token property">font-weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token selector">.desc</span> <span class="token punctuation">{</span>
+      <span class="token property">opacity</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+
+</code></pre></div><!----><div class="content page-nav"><p class="inner"><span class="prev">
+        ← <a href="/demo/" class="prev router-link-active">
+          demo
+        </a></span><!----></p></div></div></div></div>
+    <script src="/assets/js/1.cbde87dc.js" defer></script><script src="/assets/js/4.42f597fd.js" defer></script><script src="/assets/js/app.2e3de6ae.js" defer></script>
+  </body>
+</html>
