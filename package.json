@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build":"vuepress build docs"
+    "build":"vuepress build"
   },
   "devDependencies": {
     "node-sass": "^4.9.0",
