@@ -1,6 +1,8 @@
 module.exports = {
   title: 'Demo 合集',
   description: 'Just playing around',
+  base:'/show/',
+  dest:'docs',
   themeConfig: {
     sidebar: {
       '/demo/': [

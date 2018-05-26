@@ -92,7 +92,8 @@ $RECYCLE.BIN/
 *.lnk
 # idea
 .idea/
-
+# vuepress
+.vuepress/dist/
 
 # End of https://www.gitignore.io/api/node,visualstudiocode,windows
 
